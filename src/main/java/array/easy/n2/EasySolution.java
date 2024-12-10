@@ -3,6 +3,9 @@ package array.easy.n2;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * My 1st solution
+ */
 class EasySolution implements Solution {
 
     @Override

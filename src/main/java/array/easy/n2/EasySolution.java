@@ -15,10 +15,10 @@ class EasySolution implements Solution {
         }
         if (map.isEmpty()) return -1;
 
-        int frequence = map.values().stream().max(Integer::compareTo).get();
+        int frequency = map.values().stream().max(Integer::compareTo).get();
 
         return map.keySet().stream()
-                .filter(e -> map.get(e) == frequence)
+                .filter(e -> map.get(e) == frequency)
                 .min(Integer::compareTo).get();
     }
 }

@@ -1,5 +1,8 @@
 package array.easy.n2;
 
+/**
+ * 3nd time solution from LeetCode
+ */
 class ThirdFastSolution implements Solution {
     public int mostFrequentEven(int[] nums) {
 

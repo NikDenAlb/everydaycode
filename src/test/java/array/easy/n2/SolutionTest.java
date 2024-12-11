@@ -13,7 +13,8 @@ class SolutionTest {
         return Stream.of(
                 Arguments.of(new EasySolution()),
                 Arguments.of(new CrazySolution()),
-                Arguments.of(new SecondFastSolution())
+                Arguments.of(new SecondFastSolution()),
+                Arguments.of(new ThirdFastSolution())
         );
     }
 

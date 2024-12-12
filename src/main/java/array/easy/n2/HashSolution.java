@@ -2,6 +2,9 @@ package array.easy.n2;
 
 import java.util.HashMap;
 
+/**
+ * Good solution with HashMap from LeetCode
+ */
 public class HashSolution implements Solution {
     @Override
     public int mostFrequentEven(int[] nums) {

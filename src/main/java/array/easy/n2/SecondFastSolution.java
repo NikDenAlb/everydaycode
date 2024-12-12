@@ -2,6 +2,7 @@ package array.easy.n2;
 
 /**
  * 2nd time solution from LeetCode
+ * it's int[] solution like crazy, but looks prettier
  */
 class SecondFastSolution implements Solution {
     public int mostFrequentEven(int[] nums) {

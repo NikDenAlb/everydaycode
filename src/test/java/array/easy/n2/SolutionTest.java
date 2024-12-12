@@ -14,7 +14,8 @@ class SolutionTest {
                 Arguments.of(new EasySolution()),
                 Arguments.of(new CrazySolution()),
                 Arguments.of(new SecondFastSolution()),
-                Arguments.of(new ThirdFastSolution())
+                Arguments.of(new ThirdFastSolution()),
+                Arguments.of(new HashSolution())
         );
     }
 

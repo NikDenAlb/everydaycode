@@ -9,7 +9,6 @@
     visit_id is the column with unique values for this table.    
     This table contains information about the customers who visited the mall.
 
-
 #### Table: `Transactions`
 
     +----------------+---------+
@@ -22,8 +21,8 @@
     transaction_id is column with unique values for this table.
     This table contains information about the transactions made during the visit_id.
 
-
-Write a solution to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits.
+Write a solution to find the IDs of the users who visited without making any transactions and the number of times they
+made these types of visits.
 
 Return the result table sorted in any order.
 
@@ -62,10 +61,16 @@ The result format is in the following example.
     | 30          | 1              |
     | 96          | 1              |
     +-------------+----------------+
+
 #### Explanation:
+
 Customer with id = 23 visited the mall once and made one transaction during the visit with id = 12.<br>
 Customer with id = 9 visited the mall once and made one transaction during the visit with id = 13.<br>
 Customer with id = 30 visited the mall once and did not make any transactions.<br>
-Customer with id = 54 visited the mall three times. During 2 visits they did not make any transactions, and during one visit they made 3 transactions.<br>
+Customer with id = 54 visited the mall three times. During 2 visits they did not make any transactions, and during one
+visit they made 3 transactions.<br>
 Customer with id = 96 visited the mall once and did not make any transactions.<br>
-As we can see, users with IDs 30 and 96 visited the mall one time without making any transactions. Also, user 54 visited the mall twice and did not make any transactions.<br>
+As we can see, users with IDs 30 and 96 visited the mall one time without making any transactions. Also, user 54 visited
+the mall twice and did not make any transactions.<br>
+
+#### https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/

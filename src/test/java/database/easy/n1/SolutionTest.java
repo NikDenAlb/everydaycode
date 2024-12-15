@@ -11,7 +11,10 @@ import java.sql.Statement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class VisitsTest {
+/**
+ * Clean GPT test
+ */
+public class SolutionTest {
     private Connection connection;
 
     @BeforeEach

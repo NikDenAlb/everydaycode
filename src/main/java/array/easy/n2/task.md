@@ -27,4 +27,4 @@ If there is a tie, return the __smallest__ one. If there is no such element, ret
     1 <= nums.length <= 2000
     0 <= nums[i] <= 105
 
-#### https://leetcode.com/problems/most-frequent-even-element/description/
+#### https://leetcode.com/problems/most-frequent-even-element/

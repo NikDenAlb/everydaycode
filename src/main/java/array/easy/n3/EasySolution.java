@@ -9,15 +9,15 @@ public class EasySolution implements Solution {
 
     @Override
     public boolean checkValid(int[][] matrix) {
-        int[] row = new int[matrix.length];
+        int[] expected = new int[matrix.length];
         for (int i = 0; i < matrix.length; i++) {
-            row[i] = i + 1;
+            expected[i] = i + 1;
         }
 
         for (int[] ints : matrix) {
             int[] actual = Arrays.copyOf(ints, ints.length);
             Arrays.sort(actual);
-            if (!Arrays.equals(actual, row)) {
+            if (!Arrays.equals(expected, actual)) {
                 return false;
             }
         }
@@ -28,7 +28,7 @@ public class EasySolution implements Solution {
                 actual[j] = matrix[j][i];
             }
             Arrays.sort(actual);
-            if (!Arrays.equals(actual, row)) {
+            if (!Arrays.equals(expected, actual)) {
                 return false;
             }
         }

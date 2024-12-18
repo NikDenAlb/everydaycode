@@ -8,7 +8,7 @@ import java.util.HashSet;
  * For each check, you can keep a set of the unique elements in the checked row/col. By the end of the check, the size of the set should be n.<br>
  * <a href="https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/solutions/2513380/easy-java-solution-hashset-beginner-friendly-best-method/">link</a>
  */
-class HashSetSolution {
+class HashSetSolution implements Solution {
     public boolean checkValid(int[][] matrix) {
         int n = matrix.length;
         for (int[] value : matrix) {

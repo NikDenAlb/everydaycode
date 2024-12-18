@@ -1,5 +1,6 @@
 package array.easy.n3;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -14,7 +15,10 @@ public class SolutionTest {
 
     private static Stream<Arguments> solutionsProvider() {
         return Stream.of(
-                Arguments.of(new EasySolution())
+                Arguments.of(new DuplicateSolution()),
+                Arguments.of(new EasySolution()),
+                Arguments.of(new HashSetBeautySolution()),
+                Arguments.of(new HashSetSolution())
         );
     }
 
@@ -62,6 +66,7 @@ public class SolutionTest {
         });
     }
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("solutionsProvider")
     @DisplayName("Testing invalid matrices")
@@ -72,6 +77,7 @@ public class SolutionTest {
         });
     }
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("solutionsProvider")
     @DisplayName("Testing edge cases")

@@ -1,3 +1,5 @@
+## 1582. Customer Who Visited but Did Not Make Any Transactions
+
 #### Table: `Visits`
 
     +-------------+---------+

@@ -19,8 +19,7 @@ public class SolutionTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        // Установка соединения с базой данных
-        connection = DriverManager.getConnection("jdbc:sqlite::memory:"); // Используем временную базу данных
+        connection = DriverManager.getConnection("jdbc:sqlite::memory:");
         initializeDatabase();
     }
 
@@ -53,7 +52,6 @@ public class SolutionTest {
     public void testVisitsNoTransactions() throws Exception {
         Statement stmt = connection.createStatement();
 
-        // Выполнение тестируемого запроса
         ResultSet rs = stmt.executeQuery(
                 "SELECT v.customer_id, COUNT(v.visit_id) AS count_no_trans " +
                         "FROM Visits v " +
@@ -62,14 +60,12 @@ public class SolutionTest {
                         "GROUP BY v.customer_id;"
         );
 
-        // Проверка результатов
         int totalResults = 0;
         while (rs.next()) {
             totalResults++;
             int customerId = rs.getInt("customer_id");
             int countNoTrans = rs.getInt("count_no_trans");
 
-            // В этих случаях, исходя из вашего примера
             if (customerId == 30) {
                 assertEquals(1, countNoTrans);
             } else if (customerId == 54) {
@@ -79,7 +75,6 @@ public class SolutionTest {
             }
         }
 
-        // Проверим, что получили три результата (для клиентов 30, 54 и 96)
         assertEquals(3, totalResults);
 
         rs.close();

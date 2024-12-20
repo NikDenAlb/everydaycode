@@ -82,23 +82,20 @@ public class SolutionTest {
     @MethodSource("solutionsProvider")
     @DisplayName("Testing edge cases")
     void testEdgeCases(Solution solution) {
-        // Тест на минимально допустимое значение n = 1
         int[][] singleElementMatrix = {
                 {1}
         };
         assertTrue(solution.checkValid(singleElementMatrix));
 
-        // Тест на матрицу n = 100 (проверка верхней границы)
         int[][] largeMatrix = new int[100][100];
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 100; j++) {
-                largeMatrix[i][j] = (j + i) % 100 + 1; // заполняем корректными значениями
+                largeMatrix[i][j] = (j + i) % 100 + 1;
             }
         }
         assertTrue(solution.checkValid(largeMatrix));
 
-        // Тест для неправильной матрицы
-        largeMatrix[0][0] = 101; // выход за пределы
+        largeMatrix[0][0] = 101;
         assertFalse(solution.checkValid(largeMatrix));
     }
 }

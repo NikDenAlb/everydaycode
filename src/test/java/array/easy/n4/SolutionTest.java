@@ -31,7 +31,6 @@ public class SolutionTest {
         );
     }
 
-    // объединенный провайдер
     private static Stream<Arguments> combinedProvider() {
         return solutionsProvider().flatMap(solutionArg ->
                 provideData().map(dataArg -> {

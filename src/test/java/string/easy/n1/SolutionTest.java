@@ -11,6 +11,12 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
+    private static Stream<Arguments> solutionsProvider() {
+        return Stream.of(
+                Arguments.of(new EasySolution(), "EasySolution")
+        );
+    }
+
     private static Stream<Arguments> provideData() {
         return Stream.of(
                 Arguments.of("abbxxxxzzy", List.of(Arrays.asList(3, 6))),
@@ -22,8 +28,19 @@ class SolutionTest {
         );
     }
 
+    private static Stream<Arguments> combinedProvider() {
+        return solutionsProvider().flatMap(solutionArg ->
+                provideData().map(dataArg -> {
+                    Solution solution = (Solution) solutionArg.get()[0];
+                    String solutionName = (String) solutionArg.get()[1];
+                    String s = (String) dataArg.get()[0];
+                    List<List<Integer>> expected = (List<List<Integer>>) dataArg.get()[1];
+                    return Arguments.of(solution, solutionName, s, expected);
+                }));
+    }
+
     @ParameterizedTest
-    @MethodSource("provideData")
+    @MethodSource("combinedProvider")
     void testLargeGroupPositions(String s, List<List<Integer>> expected) {
         Solution solution = new EasySolution();
         List<List<Integer>> actual = solution.largeGroupPositions(s);

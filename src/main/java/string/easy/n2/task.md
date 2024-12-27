@@ -23,9 +23,9 @@ Specifically:
 >`b` maps to `cat`.
 #### Example 2:
 
-Input: pattern = "abba", s = "dog cat cat fish"
+>__Input:__ pattern = "abba", s = "dog cat cat fish"
 
-Output: false
+>__Output:__ false
 
 #### Example 3:
 

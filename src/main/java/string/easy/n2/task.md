@@ -29,9 +29,9 @@ Specifically:
 
 #### Example 3:
 
-Input: pattern = "aaaa", s = "dog cat cat dog"
+>__Input:__ pattern = "aaaa", s = "dog cat cat dog"
 
-Output: false
+>__Output:__ false
 
 #### Constraints:
 

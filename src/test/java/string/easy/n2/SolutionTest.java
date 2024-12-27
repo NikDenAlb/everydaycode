@@ -22,16 +22,16 @@ class SolutionTest {
                 Arguments.of("abab", "apple banana apple banana", true),
                 Arguments.of("aaaa", "apple apple apple apple", true),
                 Arguments.of("abba", "dog dog dog dog", false),
-                Arguments.of("abc", "", false), // Edge case: empty string
-                Arguments.of("", "foo", false), // Edge case: empty pattern
-                Arguments.of("a", " ", false) // Edge case: single letter pattern with empty space
+                Arguments.of("abc", "", false),
+                Arguments.of("", "foo", false),
+                Arguments.of("a", " ", false)
         );
     }
 
     @ParameterizedTest
     @MethodSource("testCases")
     void testWordPattern(String pattern, String s, boolean expected) {
-        Solution solution = new EasySolution(); // Замена на вашу реализацию
+        Solution solution = new EasySolution();
         boolean actual = solution.wordPattern(pattern, s);
         assertEquals(expected, actual);
     }

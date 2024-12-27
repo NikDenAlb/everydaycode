@@ -11,16 +11,16 @@ Specifically:
 
 #### Example 1:
 
-Input: pattern = "abba", s = "dog cat cat dog"
+>__Input:__ pattern = "abba", s = "dog cat cat dog"
 
-Output: true
+>__Output:__ true
 
-Explanation:
-
-The bijection can be established as:
-
-'a' maps to "dog".
-'b' maps to "cat".
+>__Explanation:__
+>
+>The bijection can be established as:
+>
+>`a` maps to `dog`.
+>`b` maps to `cat`.
 #### Example 2:
 
 Input: pattern = "abba", s = "dog cat cat fish"

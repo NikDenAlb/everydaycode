@@ -31,7 +31,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("testCases")
     void testWordPattern(String pattern, String s, boolean expected) {
-        Solution solution = new EasySolution();
+        Solution solution = new GPTSolution();
         boolean actual = solution.wordPattern(pattern, s);
         assertEquals(expected, actual);
     }

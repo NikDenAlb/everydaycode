@@ -12,8 +12,8 @@ class SolutionTest {
 
     private static Stream<Arguments> solutionsProvider() {
         return Stream.of(
-                Arguments.of(new Solution()),  // Ваша реализация
-                Arguments.of(new AnotherSolution()) // Пример другой реализации
+                Arguments.of(new EasySolution())//,  // Ваша реализация
+                //Arguments.of(new AnotherSolution()) // Пример другой реализации
         );
     }
 

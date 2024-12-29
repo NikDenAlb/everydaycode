@@ -10,6 +10,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SolutionTest {
 
+    private static Stream<Arguments> solutionsProvider() {
+        return Stream.of(
+                Arguments.of(new Solution()),  // Ваша реализация
+                Arguments.of(new AnotherSolution()) // Пример другой реализации
+        );
+    }
+
     private static Stream<Arguments> testCases() {
         return Stream.of(
                 Arguments.of("abba", "dog cat cat dog", true),
@@ -28,10 +35,20 @@ class SolutionTest {
         );
     }
 
+    private static Stream<Arguments> combinedProvider() {
+        return solutionsProvider().flatMap(solutionArg ->
+                testCases().map(testCaseArg -> {
+                    Solution solution = (Solution) solutionArg.get()[0];
+                    String pattern = (String) testCaseArg.get()[0];
+                    String s = (String) testCaseArg.get()[1];
+                    boolean expected = (Boolean) testCaseArg.get()[2];
+                    return Arguments.of(solution, pattern, s, expected);
+                }));
+    }
+
     @ParameterizedTest
-    @MethodSource("testCases")
-    void testWordPattern(String pattern, String s, boolean expected) {
-        Solution solution = new GPTSolution();
+    @MethodSource("combinedProvider")
+    void testWordPattern(Solution solution, String pattern, String s, boolean expected) {
         boolean actual = solution.wordPattern(pattern, s);
         assertEquals(expected, actual);
     }

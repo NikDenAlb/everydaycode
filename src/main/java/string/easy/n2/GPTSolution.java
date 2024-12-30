@@ -17,11 +17,9 @@ public class GPTSolution implements Solution {
             char currentChar = pattern.charAt(i);
             String currentWord = words[i];
 
-            // Проверяем соответствие текущего символа слова
             if (!charToWordMap.containsKey(currentChar)) {
                 charToWordMap.put(currentChar, currentWord);
             } else {
-                // Если соответствие найдено - проверяем его правильность
                 if (!charToWordMap.get(currentChar).equals(currentWord)) {
                     return false;
                 }

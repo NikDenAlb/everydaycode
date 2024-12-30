@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class GPTSolution implements Solution {
     public boolean wordPattern(String pattern, String s) {
-        String[] words = s.split(" "); // Разделяем строку на слова
+        String[] words = s.split(" ");
         if (pattern.length() != words.length) {
             return false; // Если длины не совпадают - возвращаем false
         }

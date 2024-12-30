@@ -25,17 +25,15 @@ public class GPTSolution implements Solution {
                 }
             }
 
-            // Проверяем соответствие текущего слова символу
             if (!wordToCharMap.containsKey(currentWord)) {
                 wordToCharMap.put(currentWord, currentChar);
             } else {
-                // Если соответствие найдено - проверяем его правильность
                 if (!wordToCharMap.get(currentWord).equals(currentChar)) {
                     return false;
                 }
             }
         }
 
-        return true; // Если все проверки пройдены, значит, соответствует
+        return true;
     }
 }

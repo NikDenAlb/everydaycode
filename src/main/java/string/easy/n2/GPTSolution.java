@@ -7,7 +7,7 @@ public class GPTSolution implements Solution {
     public boolean wordPattern(String pattern, String s) {
         String[] words = s.split(" ");
         if (pattern.length() != words.length) {
-            return false; // Если длины не совпадают - возвращаем false
+            return false;
         }
 
         Map<Character, String> charToWordMap = new HashMap<>();

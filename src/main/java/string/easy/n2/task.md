@@ -43,3 +43,5 @@ Specifically:
 - All the words in `s` are separated by a __single space__.
 
 #### https://leetcode.com/problems/word-pattern/
+
+Closed Solution: https://leetcode.com/problems/word-pattern/editorial/

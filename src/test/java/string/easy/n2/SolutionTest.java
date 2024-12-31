@@ -13,7 +13,8 @@ class SolutionTest {
     private static Stream<Arguments> solutionsProvider() {
         return Stream.of(
                 Arguments.of(new EasySolution()),
-                Arguments.of(new GPTSolution())
+                Arguments.of(new GPTSolution()),
+                Arguments.of(new BestSolution())
         );
     }
 

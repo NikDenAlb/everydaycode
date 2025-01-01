@@ -1,10 +1,28 @@
 ## 26. Remove Duplicates from Sorted Array
 
-You are given an integer array `cost` where `cost[i]` is the cost of **i<sup>th</sup>** step on a staircase. Once you pay the cost, you can either climb one or two steps.
+Given an integer array `nums` sorted in __non-decreasing order__, remove the duplicates _in-place_ such that each unique element
+appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements
+in nums.
 
-You can either start from the step with index `0`, or the step with index `1`.
+Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
 
-Return _the minimum cost to reach the top of the floor_.
+Change the array nums such that the first k elements of nums contain the unique elements in the order they were present
+in nums initially. The remaining elements of nums are not important as well as the size of nums.
+Return k.
+Custom Judge:
+
+The judge will test your solution with the following code:
+
+int[] nums = [...]; // Input array
+int[] expectedNums = [...]; // The expected answer with correct length
+
+int k = removeDuplicates(nums); // Calls your implementation
+
+assert k == expectedNums.length;
+for (int i = 0; i < k; i++) {
+assert nums[i] == expectedNums[i];
+}
+If all assertions pass, then your solution will be accepted.
 
 #### Example 1:
 
@@ -14,7 +32,7 @@ __Explanation:__ You will start at index 1.<br>
 -Pay 15 and climb two steps to reach the top.<br>
 The total cost is 15.
 
-####  Example 2:
+#### Example 2:
 
 __Input:__ cost = [1,100,1,1,1,100,1,1,100,1]<br>
 __Output:__ 6<br>
@@ -26,7 +44,6 @@ __Explanation:__ You will start at index 0.<br>
 -Pay 1 and climb two steps to reach index 9.<br>
 -Pay 1 and climb one step to reach the top.<br>
 The total cost is 6.
-
 
 #### Constraints:
 

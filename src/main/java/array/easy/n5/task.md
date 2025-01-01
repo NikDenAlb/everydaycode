@@ -33,20 +33,16 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 #### Example 2:
 
-__Input:__ cost = [1,100,1,1,1,100,1,1,100,1]<br>
-__Output:__ 6<br>
-__Explanation:__ You will start at index 0.<br>
--Pay 1 and climb two steps to reach index 2.<br>
--Pay 1 and climb two steps to reach index 4.<br>
--Pay 1 and climb two steps to reach index 6.<br>
--Pay 1 and climb one step to reach index 7.<br>
--Pay 1 and climb two steps to reach index 9.<br>
--Pay 1 and climb one step to reach the top.<br>
-The total cost is 6.
+Input: nums = [0,0,1,1,1,2,2,3,3,4]
+Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
 
 #### Constraints:
 
-- `2 <= cost.length <= 1000`
-- `0 <= cost[i] <= 999`
+Input: nums = [0,0,1,1,1,2,2,3,3,4]
+Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
 
 #### https://leetcode.com/problems/min-cost-climbing-stairs/

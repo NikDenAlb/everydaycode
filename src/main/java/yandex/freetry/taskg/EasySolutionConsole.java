@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 public class EasySolutionConsole {
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-
         String J = r.readLine();
         String S = r.readLine();
+        r.close();
 
         System.out.println(stoneJewels(J,S));
     }

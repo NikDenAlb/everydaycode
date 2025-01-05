@@ -27,6 +27,7 @@ public class MediansSubsegments {
      * @param n длина перестановки
      * @param b медиана
      * @param a перестановка чисел
+     * @return количество подотрезков с медианой равной b
      */
     public static int mediansSubsegments(int n, int b, int[] a) {
         int count = 0;

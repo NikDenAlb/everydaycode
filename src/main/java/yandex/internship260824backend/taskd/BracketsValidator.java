@@ -56,10 +56,10 @@ public class BracketsValidator {
         return stack.isEmpty() ? 1 : 0;
     }
 
-    private static boolean isMatchingPair(char e1, char e2) {
-        return (e1 == '?') ||
-                (e1 == '(' && e2 == ')') ||
-                (e1 == '[' && e2 == ']') ||
-                (e1 == '{' && e2 == '}');
+    private static boolean isMatchingPair(char openChar, char closeChar) {
+        return (openChar == '?') ||
+                (openChar == '(' && closeChar == ')') ||
+                (openChar == '[' && closeChar == ']') ||
+                (openChar == '{' && closeChar == '}');
     }
 }

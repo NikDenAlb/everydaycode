@@ -3,6 +3,9 @@ package yandex.internship260824backend.taskb;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * test - TL
+ */
 public class MediansSubsegments {
 
     public static void main(String[] args) throws Exception {

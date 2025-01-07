@@ -3,6 +3,9 @@ package yandex.internship260824backend.taske;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * test - TL
+ */
 public class IneffectiveSearch {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -24,7 +27,7 @@ public class IneffectiveSearch {
     }
 
     /**
-     * @param words словарь
+     * @param words    словарь
      * @param requests список запросов
      * @return количество действий на каждый запрос с переносом строки после каждого значения
      */
@@ -37,7 +40,7 @@ public class IneffectiveSearch {
             for (String word : words) {
                 acts++;
 
-                int commonPrefixLength  = 0;
+                int commonPrefixLength = 0;
                 while (commonPrefixLength < word.length()
                         && commonPrefixLength < request.length()
                         && word.charAt(commonPrefixLength) == request.charAt(commonPrefixLength)) {

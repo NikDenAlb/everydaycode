@@ -5,6 +5,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * test - TL
+ */
 public class BracketsValidator {
     public static void main(String[] args) throws Exception {
         int MOD = 1000000007;
@@ -23,9 +26,9 @@ public class BracketsValidator {
     }
 
     /**
-     * @param n длина последовательности
-     * @param sequence последовательность
-     * @param stack накопленная очередь (пустая для первого вызова)
+     * @param n          длина последовательности
+     * @param sequence   последовательность
+     * @param stack      накопленная очередь (пустая для первого вызова)
      * @param startIndex индекс входа (0 - для первого вызова)
      * @return количество способов заменить знаки `?` на скобки
      */

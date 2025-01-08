@@ -16,6 +16,14 @@ public class RootEquation {
         System.out.println(rootEquation(a, b, c));
     }
 
+    /**
+     * sqrt(a*x+b)=c решение в целых числах
+     *
+     * @param a параметр уравнения
+     * @param b параметр уравнения
+     * @param c параметр уравнения
+     * @return решение или "NO SOLUTION"/"MANY SOLUTIONS" если решение не единственное
+     */
     public static String rootEquation(int a, int b, int c) {
         if (c < 0) {
             return "NO SOLUTION";

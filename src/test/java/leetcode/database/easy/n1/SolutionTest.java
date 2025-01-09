@@ -1,4 +1,4 @@
-package database.easy.n1;
+package leetcode.database.easy.n1;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

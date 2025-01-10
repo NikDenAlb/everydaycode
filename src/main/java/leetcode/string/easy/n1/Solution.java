@@ -1,4 +1,4 @@
-package string.easy.n1;
+package leetcode.string.easy.n1;
 
 import java.util.List;
 

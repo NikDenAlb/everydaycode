@@ -1,4 +1,4 @@
-package string.easy.n2;
+package leetcode.string.easy.n2;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

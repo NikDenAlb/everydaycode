@@ -2,8 +2,10 @@ package yandex.algorithms1.taskf;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
+/**
+ * test - Ok
+ */
 public class LaptopArrangement {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -19,20 +21,22 @@ public class LaptopArrangement {
         System.out.println(defineTable(lL1, wL1, lL2, wL2));
     }
 
-    public static String defineTable (int lL1, int wL1, int lL2, int wL2) {
+    /**
+     * @param lL1 длина первого ноутбука
+     * @param wL1 длина второго ноутбука
+     * @param lL2 ширина первого ноутбука
+     * @param wL2 ширина второго ноутбука
+     * @return одна из вариаций длины и ширины стола с минимальной площадью
+     */
+    public static String defineTable(int lL1, int wL1, int lL2, int wL2) {
         int[] pos1 = defineUnFlipTable(lL1, wL1, lL2, wL2);
-        int[] pos2 = defineUnFlipTable(lL2, wL2, wL2, lL2);
-
-        System.out.println("pos1 = " + Arrays.toString(pos1));
-        System.out.println("pos2 = " + Arrays.toString(pos2));
+        int[] pos2 = defineUnFlipTable(lL1, wL1, wL2, lL2);
 
         if (pos1[0] * pos1[1] > pos2[0] * pos2[1]) {
-            return pos2[0] + " " + pos2[0];
+            return pos2[0] + " " + pos2[1];
         } else {
             return pos1[0] + " " + pos1[1];
         }
-
-
     }
 
     static int[] defineUnFlipTable(int lL1, int wL1, int lL2, int wL2) {

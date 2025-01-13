@@ -3,6 +3,9 @@ package yandex.algorithms1.taski;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * test - Ok
+ */
 public class PrisonerIf {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -27,7 +30,7 @@ public class PrisonerIf {
      * @return "YES"/"NO" можно ли кирпич просунуть в дыру
      */
     public static String isBrickFit(int a, int b, int c, int d, int e) {
-        if (    d >= a && e >= b ||
+        if (d >= a && e >= b ||
                 d >= b && e >= a ||
 
                 d >= a && e >= c ||

@@ -1,7 +1,9 @@
-package yandex.algorithms1.part1ComplexityTestingSpecialCases.taskj;
+package yandex.algorithms1.part1ComplexityTestingSpecialCases.homework.taskj;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
+//TODO добиться прохождения тестов
 
 //(f-cx)/d = (e-ax)/b
 //b(f-cx) = d (e-ax)
@@ -9,6 +11,10 @@ import java.io.InputStreamReader;
 
 //(e-by)/a = (f-dy)/c
 //c(e-by)= a (f-dy)
+
+/**
+ * test 10
+ */
 public class TwoLinearEquations {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -24,12 +30,13 @@ public class TwoLinearEquations {
 
         System.out.println(solveTwoLinearEquations(a, b, c, d, e, f));
     }
+
     /**
      * ax+by=e<br>
      * cx+dy=f
      */
     public static String solveTwoLinearEquations(double a, double b, double c, double d, double e, double f) {
-        if (a == 0 && b == 0 && c == 0 && d == 0 && e == 0 && f == 0) {
+        if (a == b && c == d && e == f&&(a!=0||b!=0)) {
             return "5";
         }
 
@@ -41,6 +48,14 @@ public class TwoLinearEquations {
         if (b == d && b == 0 && e / a == f / c) {
             double x = e / a;
             return "3 " + x;
+        }
+
+        if (a == 0 && b == 0 && e != 0) {
+            return "0";
+        }
+
+        if (c == 0 && d == 0 && f != 0) {
+            return "0";
         }
 
         if (a / c == b / d && a / c != e / f) {

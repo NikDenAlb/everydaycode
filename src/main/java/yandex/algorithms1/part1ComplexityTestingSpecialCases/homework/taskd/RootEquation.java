@@ -1,4 +1,4 @@
-package yandex.algorithms1.part1ComplexityTestingSpecialCases.taskd;
+package yandex.algorithms1.part1ComplexityTestingSpecialCases.homework.taskd;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

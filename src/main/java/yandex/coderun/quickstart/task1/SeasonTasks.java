@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 /**
  * <a href="https://coderun.yandex.ru/selections/quickstart/problems/season-tasks">task link</a><br>
- *test - OK
+ * test - OK
  */
 public class SeasonTasks {
     /*

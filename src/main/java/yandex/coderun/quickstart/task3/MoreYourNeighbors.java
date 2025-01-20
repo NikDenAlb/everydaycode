@@ -16,7 +16,6 @@ public class MoreYourNeighbors {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         int[] nums = Arrays.stream(reader.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
         int count = 0;
@@ -28,8 +27,8 @@ public class MoreYourNeighbors {
                 i++;
             }
         }
-        writer.write(String.valueOf(count));
 
+        writer.write(String.valueOf(count));
 
         reader.close();
         writer.close();

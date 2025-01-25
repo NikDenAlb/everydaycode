@@ -15,7 +15,6 @@ public class GCDAndLCM {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         String[] numsString = reader.readLine().split(" ");
         int a = Integer.parseInt(numsString[0]);
         int b = Integer.parseInt(numsString[1]);
@@ -30,7 +29,6 @@ public class GCDAndLCM {
         long lcm = (long) a / gcd * b;
 
         writer.write(gcd + " " + lcm);
-
 
         reader.close();
         writer.close();

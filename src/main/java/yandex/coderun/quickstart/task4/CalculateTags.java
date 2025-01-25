@@ -15,7 +15,6 @@ public class CalculateTags {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         int i = Integer.parseInt(reader.readLine());
         if (i == 1) {
             writer.write("1");
@@ -31,7 +30,6 @@ public class CalculateTags {
             }
             writer.write(String.valueOf(out));
         }
-
 
         reader.close();
         writer.close();

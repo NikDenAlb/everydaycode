@@ -16,9 +16,9 @@ public class DictionarySynonyms {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         HashMap<String, String> dictionary = new HashMap<>();
         int n = Integer.parseInt(reader.readLine());
+
         for (int i = 0; i < n; i++) {
             String[] words = reader.readLine().split(" ");
             dictionary.put(words[0], words[1]);
@@ -26,8 +26,8 @@ public class DictionarySynonyms {
         }
         String word = reader.readLine();
         String synonym = dictionary.get(word);
-        writer.write(synonym);
 
+        writer.write(synonym);
 
         reader.close();
         writer.close();

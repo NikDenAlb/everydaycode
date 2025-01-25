@@ -16,7 +16,6 @@ public class MatrixOperations {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         String[] input = reader.readLine().split(" ");
         int n = Integer.parseInt(input[0]);
         int m = Integer.parseInt(input[1]);
@@ -57,7 +56,6 @@ public class MatrixOperations {
         out.append(mCT[k - 1][n - 1]);
 
         writer.write(out.toString());
-
 
         reader.close();
         writer.close();

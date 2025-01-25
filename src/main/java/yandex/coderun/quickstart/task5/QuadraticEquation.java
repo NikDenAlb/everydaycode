@@ -15,14 +15,12 @@ public class QuadraticEquation {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         String[] nums = reader.readLine().split(" ");
         int a = Integer.parseInt(nums[0]);
         int b = Integer.parseInt(nums[1]);
         int c = Integer.parseInt(nums[2]);
 
-        double d = (double) b * b - 4 * a * c;
-
+        int d = b * b - 4 * a * c;
         if (d < 0) {
             writer.write("0");
         } else if (d == 0) {
@@ -38,7 +36,6 @@ public class QuadraticEquation {
                 writer.write("2\n" + x1 + " " + x2);
             }
         }
-
 
         reader.close();
         writer.close();

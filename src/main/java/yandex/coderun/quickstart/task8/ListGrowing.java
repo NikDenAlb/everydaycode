@@ -16,7 +16,6 @@ public class ListGrowing {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         int[] nums = Arrays.stream(reader.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         boolean growing = true;
         for (int i = 1; i < nums.length; i++) {
@@ -28,7 +27,6 @@ public class ListGrowing {
         if (growing) {
             writer.write("YES");
         } else writer.write("NO");
-
 
         reader.close();
         writer.close();

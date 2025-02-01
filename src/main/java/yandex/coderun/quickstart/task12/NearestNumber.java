@@ -15,7 +15,6 @@ public class NearestNumber {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
-
         int n = Integer.parseInt(reader.readLine());
         String[] stringNums = reader.readLine().split(" ");
         int[] nums = new int[n];

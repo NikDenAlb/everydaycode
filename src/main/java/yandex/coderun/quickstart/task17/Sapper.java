@@ -40,8 +40,6 @@ public class Sapper {
                                     count++;
                                 }
                             }
-
-
                         }
                     }
                     matrix[i][j] = count;

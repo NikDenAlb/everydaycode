@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.HashSet;
+import java.util.List;
 
 /**
  * <a href="https://coderun.yandex.ru/selections/quickstart/problems/open-calculator">task link</a><br>
@@ -22,10 +23,7 @@ public class OpenCalculator {
         int z = Integer.parseInt(nums[2]);
         int n = Integer.parseInt(reader.readLine());
 
-        HashSet<Integer> set = new HashSet<>();
-        set.add(x);
-        set.add(y);
-        set.add(z);
+        HashSet<Integer> set = new HashSet<>(List.of(x, y, z));
         do {
             set.add(n % 10);
             n = n / 10;

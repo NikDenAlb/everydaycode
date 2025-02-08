@@ -1,4 +1,4 @@
-package yandex.coderun.hrtechinterview.task3;
+package yandex.algorithms1.part3Sets.taski;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,7 +9,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * <a href="https://coderun.yandex.ru/selections/hr-tech-interview/problems/polyglots">task link</a><br>
  * test - OK
  */
 public class Polyglots {
@@ -41,10 +40,10 @@ public class Polyglots {
 
         StringBuilder out = new StringBuilder();
         out.append(setAll.size()).append("\n");
-        setAll.forEach(e -> out.append(e).append("\n"));
+        setAll.forEach(e->out.append(e).append("\n"));
         out.append(setGlobal.size()).append("\n");
-        setGlobal.forEach(e -> out.append(e).append("\n"));
-        out.setLength(out.length() - 1);
+        setGlobal.forEach(e->out.append(e).append("\n"));
+        out.setLength(out.length()-1);
 
         writer.write(out.toString());
 

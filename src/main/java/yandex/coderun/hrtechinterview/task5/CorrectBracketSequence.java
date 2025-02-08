@@ -38,7 +38,7 @@ public class CorrectBracketSequence {
                 }
                 char poll = stack.poll();
 
-                if ((sequence.charAt(i) != ')' || poll != '(') &&
+                if (    (sequence.charAt(i) != ')' || poll != '(') &&
                         (sequence.charAt(i) != ']' || poll != '[') &&
                         (sequence.charAt(i) != '}' || poll != '{')) {
                     return false;

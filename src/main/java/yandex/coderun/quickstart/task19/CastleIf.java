@@ -21,14 +21,9 @@ public class CastleIf {
         int d = Integer.parseInt(reader.readLine());
         int e = Integer.parseInt(reader.readLine());
 
-        if (d >= a && e >= b ||
-                d >= b && e >= a ||
-
-                d >= a && e >= c ||
-                d >= c && e >= a ||
-
-                d >= b && e >= c ||
-                d >= c && e >= b) {
+        if (    d >= a && e >= b || d >= b && e >= a ||
+                d >= a && e >= c || d >= c && e >= a ||
+                d >= b && e >= c || d >= c && e >= b) {
             writer.write("YES");
         } else
             writer.write("NO");

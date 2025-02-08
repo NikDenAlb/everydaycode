@@ -21,10 +21,8 @@ public class LargestProductTwoNumbers {
         int x1, x2;
 
         if (nums.length > 3) {
-
             int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE;
             int min1 = Integer.MAX_VALUE, min2 = Integer.MAX_VALUE;
-
             for (int num : nums) {
                 if (num >= max1) {
                     max2 = max1;
@@ -39,7 +37,6 @@ public class LargestProductTwoNumbers {
                     min2 = num;
                 }
             }
-
             if ((long) min1 * min2 > (long) max1 * max2) {
                 x1 = min1;
                 x2 = min2;

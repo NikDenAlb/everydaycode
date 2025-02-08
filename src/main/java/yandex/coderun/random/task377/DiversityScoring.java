@@ -1,4 +1,4 @@
-package yandex.coderun.random;
+package yandex.coderun.random.task377;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

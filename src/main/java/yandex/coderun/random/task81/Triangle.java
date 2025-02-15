@@ -25,7 +25,7 @@ public class Triangle {
         writer.close();
     }
 
-    public static String isTriangle(int a, int b, int c) {
+    static String isTriangle(int a, int b, int c) {
         if (    a < b + c &&
                 b < a + c &&
                 c < a + b) {

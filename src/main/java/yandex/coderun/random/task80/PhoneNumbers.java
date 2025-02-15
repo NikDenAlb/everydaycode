@@ -26,7 +26,7 @@ public class PhoneNumbers {
         writer.close();
     }
 
-    public static String matchesList(String newNumber, String numA, String numB, String numC) {
+    static String matchesList(String newNumber, String numA, String numB, String numC) {
         long newNumberL = numberToLong(newNumber);
         long numAL = numberToLong(numA);
         long numBL = numberToLong(numB);
@@ -37,7 +37,7 @@ public class PhoneNumbers {
                 + matcherNumber(newNumberL, numCL);
     }
 
-    private static long numberToLong(String number) {
+    static long numberToLong(String number) {
         number = number.replaceAll("[^0-9]", "");
         long out = (Long.parseLong(number));
         if (out < 1_000_00_00) {
@@ -48,7 +48,7 @@ public class PhoneNumbers {
         return out;
     }
 
-    private static String matcherNumber(long newNumber, long oldNumber) {
+    static String matcherNumber(long newNumber, long oldNumber) {
         return newNumber == oldNumber ? "YES" : "NO";
     }
 }

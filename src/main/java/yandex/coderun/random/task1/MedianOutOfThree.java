@@ -7,6 +7,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
+/**
+ * <a href="https://coderun.yandex.ru/problem/median-out-of-three">task link</a><br>
+ * test - OK
+ */
 public class MedianOutOfThree {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

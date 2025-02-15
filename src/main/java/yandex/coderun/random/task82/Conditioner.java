@@ -27,7 +27,7 @@ public class Conditioner {
         writer.close();
     }
 
-    public static int conditionerWork(int tRoom, int tCond, String mode) {
+    static int conditionerWork(int tRoom, int tCond, String mode) {
         if ((mode.equals("heat") || mode.equals("auto")) && tCond > tRoom ||
                 (mode.equals("freeze") || mode.equals("auto")) && tCond < tRoom) {
             return tCond;

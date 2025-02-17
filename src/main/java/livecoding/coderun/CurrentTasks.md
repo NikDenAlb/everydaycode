@@ -2,8 +2,8 @@
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)
 - [X] [task2](https://coderun.yandex.ru/problem/triangle)
-- [ ] [task3]()
-- [ ] [task4]()
+- [X] [task3](https://coderun.yandex.ru/problem/more-your-neighbors)
+- [X] [task4](https://coderun.yandex.ru/problem/calculate-tags)
 - [ ] [task5]()
 - [ ] [task6]()
 - [ ] [task7]()

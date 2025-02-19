@@ -17,3 +17,16 @@ coderun.yandex.ru/problem/triangle
 ```
 ### Name:
 Прохождение Кодеруна. Выпуск 1. Подборка "Быстрый старт". Задачи 1 и 2.
+
+### PlayList:
+Кодерун. Подборка "Быстрый старт"
+```
+Обещание:
+Пройти подборку "Быстрый старт" 
+https://coderun.yandex.ru/selections/quickstart
+Видео выходят не чаще раза в день и не реже раза в неделю.
+
+Минимальный план:
+Пройти подборку "Подготовка к собеседованию в HR Tech" 
+https://coderun.yandex.ru/selections/hr-tech-interview
+```

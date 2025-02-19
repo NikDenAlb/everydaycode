@@ -29,4 +29,11 @@ https://coderun.yandex.ru/selections/quickstart
 Минимальный план:
 Пройти подборку "Подготовка к собеседованию в HR Tech" 
 https://coderun.yandex.ru/selections/hr-tech-interview
+
+Расширенный план:
+Пройти тренировки по алгоритмам 1.0, 2.0 и т.д.
+https://yandex.ru/yaintern/training
+
+Сверхплан:
+Продолжать решать алгоритмы на постоянной основе. Пройти весь Кодерун.
 ```

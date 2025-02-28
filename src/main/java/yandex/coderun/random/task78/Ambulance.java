@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/ambulance">task link</a><br>
- * test - TODO 1st prior
+ * test - OK
  */
 public class Ambulance {
     public static void main(String[] args) throws IOException {
@@ -35,13 +35,11 @@ public class Ambulance {
         if (m < n2 || k2 < ((p2 - 1) * m) + n2) {
             return p1 + " " + n1;
         }
-/*
-p                           1                               ||                          2                               ||
-
-n           1       |          2        |          3        ||          1       |          2        |           3
-
-k   1   2   3   4       5   6   7   8       9   10  11  12      13  14  15  16      17  18  19  20      21  22  23  24
-    -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||  -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||
+    /*
+    p                           1                               ||                          2                               ||
+    n           1       |          2        |          3        ||          1       |          2        |           3
+    k   1   2   3   4       5   6   7   8       9   10  11  12      13  14  15  16      17  18  19  20      21  22  23  24
+        -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||  -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||
 
     mq(p-1)<k<=mqp
     >>> q<k/(m(p-1))
@@ -53,11 +51,12 @@ k   1   2   3   4       5   6   7   8       9   10  11  12      13  14  15  16  
 */
         long minQ = (k2 + m * (p2 - 1) + n2 - 1) / (m * (p2 - 1) + n2);
         long maxQ = (p2 == 1 && n2 == 1) ? 1_000_000 : (k2 - 1) / (m * (p2 - 1) + n2 - 1);
+        if (minQ > maxQ) return p1 + " " + n1;
 
-        p1 = k1 / (m * minQ) + 1;
+        p1 = (k1 + m * minQ - 1) / (m * minQ);
 
         for (long i = minQ + 1; i <= maxQ; i++) {
-            long pN = k1 / (m * i) + 1;
+            long pN = (k1 + m * i - 1) / (m * i);
             if (pN != p1) {
                 p1 = 0;
                 break;

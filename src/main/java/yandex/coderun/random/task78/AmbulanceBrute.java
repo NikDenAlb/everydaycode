@@ -10,7 +10,7 @@ import java.io.OutputStreamWriter;
  * <a href="https://coderun.yandex.ru/problem/ambulance">task link</a><br>
  * test - OK
  */
-public class AmbulanceOld {
+public class AmbulanceBrute {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));

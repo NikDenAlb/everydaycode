@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/ambulance">task link</a><br>
- * test - OK
+ * test - TODO 1st prior
  */
 public class Ambulance {
     public static void main(String[] args) throws IOException {
@@ -16,74 +16,66 @@ public class Ambulance {
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String[] input = reader.readLine().split(" ");
-        int k1 = Integer.parseInt(input[0]);
-        int m = Integer.parseInt(input[1]);
-        int k2 = Integer.parseInt(input[2]);
-        int p2 = Integer.parseInt(input[3]);
-        int n2 = Integer.parseInt(input[4]);
+        long k1 = Long.parseLong(input[0]);
+        long m = Long.parseLong(input[1]);
+        long k2 = Long.parseLong(input[2]);
+        long p2 = Long.parseLong(input[3]);
+        long n2 = Long.parseLong(input[4]);
 
-        writer.write(findAddressBrute(k1, m, k2, p2, n2));
+        writer.write(findAddress(k1, m, k2, p2, n2));
 
         reader.close();
         writer.close();
     }
 
-    static String findAddressBrute(int k1, int m, int k2, int p2, int n2) {
-        int p1 = -1;
-        int n1 = -1;
+    static String findAddress(long k1, long m, long k2, long p2, long n2) {
+        long p1 = -1;
+        long n1 = -1;
 
-        if (m < n2) {
+        if (m < n2 || k2 < ((p2 - 1) * m) + n2) {
             return p1 + " " + n1;
         }
+/*
+p                           1                               ||                          2                               ||
 
-        int maxQ = 1_000_000;
-        int firstQ = 0;
+n           1       |          2        |          3        ||          1       |          2        |           3
 
-        for (int i = 1; i <= maxQ; i++) {
-            if (k2 > (long) m * i * (p2 - 1) + (long) (n2 - 1) * i
-                    && k2 <= (long) m * i * (p2 - 1) + (long) n2 * i) {
-                firstQ = i;
-                break;
-            }
-        }
-        if (firstQ == 0) {
-            return p1 + " " + n1;
-        }
-        int lastQ = 0;
+k   1   2   3   4       5   6   7   8       9   10  11  12      13  14  15  16      17  18  19  20      21  22  23  24
+    -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||  -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||
 
-        for (int i = firstQ + 1; i <= maxQ; i++) {
-            if (k2 > (long) m * i * (p2 - 1) + (long) (n2 - 1) * i
-                    && k2 <= (long) m * i * (p2 - 1) + (long) n2 * i) {
-                lastQ = i;
-            } else
-                break;
-        }
+    mq(p-1)<k<=mqp
+    >>> q<k/(m(p-1))
+    >>> q>=k/(mp)
 
-        p1 = (int) ((k1 + (long) m * firstQ - 1) / ((long) m * firstQ));
+    mq(p-1)+q(n-1)<k<=mq(p-1)+qn
+    >>> q<k/(m(p-1)+n-1)
+    >>> q>=k/(m(p-1)+n)
+*/
+        long minQ = (k2 + m * (p2 - 1) + n2 - 1) / (m * (p2 - 1) + n2);
+        long maxQ = (p2 == 1 && n2 == 1) ? 1_000_000 : (k2 - 1) / (m * (p2 - 1) + n2 - 1);
 
-        for (int i = firstQ + 1; i <= lastQ; i++) {
-            int pNew = (int) ((k1 + (long) m * i - 1) / ((long) m * i));
-            if (p1 != pNew) {
+        p1 = k1 / (m * minQ) + 1;
+
+        for (long i = minQ + 1; i <= maxQ; i++) {
+            long pN = k1 / (m * i) + 1;
+            if (pN != p1) {
                 p1 = 0;
                 break;
             }
         }
 
-        n1 = ((k1 + firstQ - 1) / firstQ) % m;
+        n1 = (k1 + minQ - 1) / minQ % m;
+
+        for (long i = minQ + 1; i <= maxQ; i++) {
+            long nN = (k1 + i - 1) / i % m;
+            if (nN != n1) {
+                return p1 + " " + 0;
+            }
+        }
         if (n1 == 0) {
             n1 = m;
         }
 
-        for (int i = firstQ + 1; i <= lastQ; i++) {
-            int nNew = ((k1 + i - 1) / i) % m;
-            if (nNew == 0) {
-                nNew = m;
-            }
-            if (n1 != nNew) {
-                n1 = 0;
-                break;
-            }
-        }
         return p1 + " " + n1;
     }
 }

@@ -11,7 +11,7 @@ import java.util.Set;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/open-calculator">task link</a><br>
- * <a href="https://youtu.be/srn_yyyCyC8">video link</a><br>
+ * <a href="https://youtu.be/srn_yyyCyC8">video link</a>
  */
 public class OpenCalculator {
     public static void main(String[] args) throws IOException {

@@ -19,7 +19,7 @@ out     1   2   4   7
 */
 /**
  * <a href="https://coderun.yandex.ru/problem/calculate-tags">task link</a><br>
- * <a href="https://youtu.be/qoPyF269TfE">video link</a><br>
+ * <a href="https://youtu.be/qoPyF269TfE">video link</a>
  */
 public class CalculateTags {
     public static void main(String[] args) throws IOException {

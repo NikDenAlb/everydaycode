@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/season-tasks">task link</a><br>
- * <a href="https://youtu.be/aemVGCkCi_E?si=LmffxY-1JzUX3cCS">video link</a><br>
+ * <a href="https://youtu.be/aemVGCkCi_E?si=LmffxY-1JzUX3cCS">video link</a>
  */
 public class SeasonTasks {
     public static void main(String[] args) throws IOException {

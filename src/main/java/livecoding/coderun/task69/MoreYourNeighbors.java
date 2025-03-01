@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/more-your-neighbors">task link</a><br>
- * <a href="https://youtu.be/qoPyF269TfE">video link</a><br>
+ * <a href="https://youtu.be/qoPyF269TfE">video link</a>
  */
 public class MoreYourNeighbors {
     public static void main(String[] args) throws IOException {

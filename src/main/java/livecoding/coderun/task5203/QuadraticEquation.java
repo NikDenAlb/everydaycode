@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/quadratic-equation">task link</a><br>
- * <a href="https://youtu.be/srn_yyyCyC8">video link</a><br>
+ * <a href="https://youtu.be/srn_yyyCyC8">video link</a>
  */
 public class QuadraticEquation {
     public static void main(String[] args) throws IOException {

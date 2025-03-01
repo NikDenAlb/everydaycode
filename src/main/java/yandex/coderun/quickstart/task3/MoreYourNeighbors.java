@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
 /**
- * <a href="https://coderun.yandex.ru/selections/quickstart/problems/more-your-neighbors/">task link</a><br>
+ * <a href="https://coderun.yandex.ru/selections/quickstart/problems/more-your-neighbors">task link</a><br>
  * test - OK
  */
 public class MoreYourNeighbors {

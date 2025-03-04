@@ -37,8 +37,8 @@ public class Ambulance {
         }
     /*
     p                           1                               ||                          2                               ||
-    n           1       |          2        |          3        ||          1       |          2        |           3
-    k   1   2   3   4       5   6   7   8       9   10  11  12      13  14  15  16      17  18  19  20      21  22  23  24
+    n           1       |          2        |          3        ||          1       |          2        |           3       ||
+    k   1   2   3   4   |   5   6   7   8   |   9   10  11  12  ||  13  14  15  16  |   17  18  19  20  |   21  22  23  24  ||
         -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||  -   -   -   -   |   -   -   -   -   |   -   -   -   -   ||
 
     mq(p-1)<k<=mqp
@@ -48,19 +48,14 @@ public class Ambulance {
     mq(p-1)+q(n-1)<k<=mq(p-1)+qn
     >>> q<k/(m(p-1)+n-1)
     >>> q>=k/(m(p-1)+n)
-*/
+    */
         long minQ = (k2 + m * (p2 - 1) + n2 - 1) / (m * (p2 - 1) + n2);
         long maxQ = (p2 == 1 && n2 == 1) ? 1_000_000 : (k2 - 1) / (m * (p2 - 1) + n2 - 1);
         if (minQ > maxQ) return p1 + " " + n1;
 
         p1 = (k1 + m * minQ - 1) / (m * minQ);
-
-        for (long i = minQ + 1; i <= maxQ; i++) {
-            long pN = (k1 + m * i - 1) / (m * i);
-            if (pN != p1) {
-                p1 = 0;
-                break;
-            }
+        if (p1 != (k1 + m * maxQ - 1) / (m * maxQ)) {
+            p1 = 0;
         }
 
         n1 = (k1 + minQ - 1) / minQ % m;

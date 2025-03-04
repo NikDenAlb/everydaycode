@@ -41,9 +41,9 @@ public class PhoneNumbers {
         number = number.replaceAll("[^0-9]", "");
         long out = (Long.parseLong(number));
         if (out < 1_000_00_00) {
-            out += 1_000_00_00L * 8495;
-        } else if (number.charAt(0) == '7') {
-            out += 10_000_000_000L;
+            out += 8495_000_00_00L;
+        } else if (out < 8_000_000_00_00L) {
+            out += 1_000_000_00_00L;
         }
         return out;
     }

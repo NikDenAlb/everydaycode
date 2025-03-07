@@ -9,14 +9,14 @@ CodeRun,live coding,algorithms,Java,Yandex,walkthrough
 Подборка "Быстрый старт"
 coderun.yandex.ru/selections/quickstart
 
-5202. Юля, Никита и задачи
-coderun.yandex.ru/problem/season-tasks
+{N}. {Name of taskN}
+coderun.yandex.ru/problem/{link name of taskN}
 
-81. Треугольник
-coderun.yandex.ru/problem/triangle
+{M}. {Name of taskM}
+coderun.yandex.ru/problem/{link name of taskM}
 ```
 ### Name:
-Прохождение Кодеруна. Выпуск 1. Подборка "Быстрый старт". Задачи 1 и 2.
+Прохождение Кодеруна. Выпуск {N}. Подборка "Быстрый старт". Задачи {M} и {K}.
 
 ### PlayList:
 Кодерун. Подборка "Быстрый старт"

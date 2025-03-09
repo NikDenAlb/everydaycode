@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * <a href="https://coderun.yandex.ru/problem/nearest-number">task link</a><br>
- * <https://youtu.be/y0lRm9saqVM">video link</a>
+ * <a href="https://youtu.be/y0lRm9saqVM">video link</a>
  */
 public class NearestNumber {
     public static void main(String[] args) throws IOException {
@@ -22,10 +22,10 @@ public class NearestNumber {
 
         int d = 2001, out = 1001;
 
-        for (int i = 0; i < nums.length; i++) {
-            if (Math.abs(nums[i] - x) < d) {
-                d = Math.abs(nums[i] - x);
-                out = nums[i];
+        for (int num : nums) {
+            if (Math.abs(num - x) < d) {
+                d = Math.abs(num - x);
+                out = num;
             }
         }
 

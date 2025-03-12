@@ -21,7 +21,7 @@ import java.util.List;
 */
 
 /**
- * <a href="https://coderun.yandex.ru/problem/triangle">task link</a><br>
+ * <a href="https://coderun.yandex.ru/problem/determine-type-sequence">task link</a><br>
  * <a href="https://youtu.be/IRxXM5omL3c">video link</a>
  */
 public class DetermineTypeSequence {

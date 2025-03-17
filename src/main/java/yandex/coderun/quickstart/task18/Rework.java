@@ -22,24 +22,33 @@ public class Rework {
         int n = Integer.parseInt(stringNM[0]);
         int m = Integer.parseInt(stringNM[1]);
 
-        List<List<Integer>> graph = new ArrayList<>();
+        List<Set<Integer>> graph = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            graph.add(new ArrayList<>());
+            graph.add(new HashSet<>());
+        }
+        for (int i = 0; i < m; i++) {
+            String[] string = reader.readLine().split(" ");
+            int a = Integer.parseInt(string[0]) - 1;
+            int b = Integer.parseInt(string[1]) - 1;
+            graph.get(a).add(b);
+            graph.get(b).add(a);
         }
 
         Set<Integer> connV1 = new HashSet<>(List.of(0));
         Set<Integer> newConn = new HashSet<>(List.of(0));
-        Set<Integer> addConn = newConn.stream().flatMap(e->graph.get(e).stream()).collect(Collectors.toSet());
+        Set<Integer> addConn = newConn.stream().flatMap(e -> graph.get(e).stream()).collect(Collectors.toSet());
+        while (!newConn.isEmpty()) {
+            addConn.removeAll(connV1);
+            connV1.addAll(addConn);
+            newConn = new HashSet<>(addConn);
+        }
+        StringBuilder out = new StringBuilder();
+        out.append(connV1.size()).append("\n");
+        if (!connV1.isEmpty()) {
+            connV1.stream().sorted().forEach(e -> out.append(e + 1).append(" "));
+        }
 
-
-
-
-
-
-
-
-
-
+        writer.write(out.toString());
 
         reader.close();
         writer.close();

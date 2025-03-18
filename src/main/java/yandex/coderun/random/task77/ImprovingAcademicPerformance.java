@@ -35,7 +35,7 @@ public class ImprovingAcademicPerformance {
         long b = Long.parseLong(reader.readLine());
         long c = Long.parseLong(reader.readLine());
 
-        writer.write(String.valueOf((3 * a + b + c + 2) / 3));
+        writer.write(String.valueOf((3 * a + b - c + 2) / 3));
 
         reader.close();
         writer.close();

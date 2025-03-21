@@ -16,7 +16,7 @@ public class CityOfCheBinarySearch {
 
         int r = Integer.parseInt(input[1]);
         int[] d = Arrays.stream(reader.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int count = 0;
+        long count = 0;
 
         for (int iL = 0; d[d.length - 1] - d[iL] > r; iL++) {
             int left = iL, right = d.length - 1;

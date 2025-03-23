@@ -18,5 +18,5 @@
 - [X] [task16](https://coderun.yandex.ru/problem/improving-academic-performance)
 - [X] [task17](https://coderun.yandex.ru/problem/sapper)
 - [X] [task18](https://coderun.yandex.ru/problem/search-in-depth)
-- [ ] [task19]()
-- [ ] [task20]()
+- [X] [task19](https://coderun.yandex.ru/problem/castle-if)
+- [X] [task20](https://coderun.yandex.ru/problem/word-appearance-number)

@@ -16,25 +16,26 @@ coderun.yandex.ru/problem/{link name of taskN}
 coderun.yandex.ru/problem/{link name of taskM}
 ```
 ### Name:
-Прохождение Кодеруна. Выпуск {N}. Подборка "Быстрый старт". Задачи {M} и {K}.
+Прохождение Кодеруна. Выпуск {N}. Псевдоподборка "Тренировки по алгоритмам 1.0". Задачи {M} и {K}.
 
 ### PlayList:
-Кодерун. Подборка "Быстрый старт"
+Кодерун. Java (Алгоритмы + Бекенд)
 ```
 Готово:
-Ничего не сделано
+Подборка "Быстрый старт"
+https://coderun.yandex.ru/selections/quickstart
 
 Обещание:
-Пройти подборку "Быстрый старт" 
-https://coderun.yandex.ru/selections/quickstart
-Видео выходят не чаще раза в день и не реже раза в неделю.
+Пройти псевдоподборку "Тренировки по алгоритмам 1.0" 
+https://yandex.ru/yaintern/algorithm-training_2021
+Видео выходят не реже раза в неделю.
 
 Минимальный план:
 Пройти подборку "Подготовка к собеседованию в HR Tech" 
 https://coderun.yandex.ru/selections/hr-tech-interview
 
 Расширенный план:
-Пройти тренировки по алгоритмам 1.0, 2.0 и т.д.
+Пройти тренировки по алгоритмам 2.0, 3.0 и т.д.
 https://yandex.ru/yaintern/training
 
 Сверхплан:

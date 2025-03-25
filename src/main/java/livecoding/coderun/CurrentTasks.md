@@ -1,3 +1,18 @@
+### [Тренировки по алгоритмам 1.0](https://yandex.ru/yaintern/algorithm-training_2021)
+
+#### Лекция 1: «Сложность, тестирование, особые случаи»
+
+- [ ] [taskA](https://coderun.yandex.ru/problem/conditioner)
+- [X] [taskB](https://coderun.yandex.ru/problem/triangle)
+- [ ] [taskC](https://coderun.yandex.ru/problem/phone-numbers)
+- [ ] [taskD](https://coderun.yandex.ru/problem/equation-root)
+- [ ] [taskE](https://coderun.yandex.ru/problem/ambulance)
+- [ ] [taskF](https://coderun.yandex.ru/problem/arrangement-laptops)
+- [ ] [taskG](https://coderun.yandex.ru/problem/details)
+- [ ] [taskH](https://coderun.yandex.ru/problem/metro)
+- [X] [taskI](https://coderun.yandex.ru/problem/castle-if)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/system-of-linear-equations-2)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

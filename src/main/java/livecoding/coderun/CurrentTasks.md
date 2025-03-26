@@ -13,6 +13,18 @@
 - [X] [taskI](https://coderun.yandex.ru/problem/castle-if)
 - [ ] [taskJ](https://coderun.yandex.ru/problem/system-of-linear-equations-2)
 
+#### Лекция 2: «Линейный поиск»
+- [X] [taskA](https://coderun.yandex.ru/problem/list-growing)
+- [X] [taskB](https://coderun.yandex.ru/problem/determine-type-sequence)
+- [X] [taskC](https://coderun.yandex.ru/problem/nearest-number)
+- [X] [taskD](https://coderun.yandex.ru/problem/more-your-neighbors)
+- [ ] [taskE](https://coderun.yandex.ru/problem/cup-cowcake-throwing)
+- [X] [taskF](https://coderun.yandex.ru/problem/symmetric-sequence)
+- [ ] [taskG](https://coderun.yandex.ru/problem/largest-product-two-numbers)
+- [X] [taskH](https://coderun.yandex.ru/problem/largest-product-three-numbers)
+- [X] [taskI](https://coderun.yandex.ru/problem/sapper)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/maxim-triangle)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

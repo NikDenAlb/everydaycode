@@ -14,6 +14,7 @@
 - [ ] [taskJ](https://coderun.yandex.ru/problem/system-of-linear-equations-2)
 
 #### Лекция 2: «Линейный поиск»
+
 - [X] [taskA](https://coderun.yandex.ru/problem/list-growing)
 - [X] [taskB](https://coderun.yandex.ru/problem/determine-type-sequence)
 - [X] [taskC](https://coderun.yandex.ru/problem/nearest-number)
@@ -24,6 +25,19 @@
 - [X] [taskH](https://coderun.yandex.ru/problem/largest-product-three-numbers)
 - [X] [taskI](https://coderun.yandex.ru/problem/sapper)
 - [ ] [taskJ](https://coderun.yandex.ru/problem/maxim-triangle)
+
+#### Лекция 3: «Множества»
+
+- [ ] [taskA](https://coderun.yandex.ru/problem/number-different-numbers)
+- [ ] [taskB](https://coderun.yandex.ru/problem/intersection-sets)
+- [ ] [taskC](https://coderun.yandex.ru/problem/cubes)
+- [X] [taskD](https://coderun.yandex.ru/problem/number-words-text)
+- [X] [taskE](https://coderun.yandex.ru/problem/open-calculator)
+- [ ] [taskF](https://coderun.yandex.ru/problem/alien-genome)
+- [ ] [taskG](https://coderun.yandex.ru/problem/turtles)
+- [ ] [taskH](https://coderun.yandex.ru/problem/angry-pigs)
+- [ ] [taskI](https://coderun.yandex.ru/problem/polyglots)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/run-manhattan)
 
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 

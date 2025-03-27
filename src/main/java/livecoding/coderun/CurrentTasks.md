@@ -39,6 +39,19 @@
 - [ ] [taskI](https://coderun.yandex.ru/problem/polyglots)
 - [ ] [taskJ](https://coderun.yandex.ru/problem/run-manhattan)
 
+#### Лекция 4: «Словари и сортировка подсчётом»
+
+- [X] [taskA](https://coderun.yandex.ru/problem/dictionary-synonyms)
+- [X] [taskB](https://coderun.yandex.ru/problem/word-appearance-number)
+- [ ] [taskC](https://coderun.yandex.ru/problem/frequent-word)
+- [ ] [taskD](https://coderun.yandex.ru/problem/keyboard)
+- [ ] [taskE](https://coderun.yandex.ru/problem/pyramid)
+- [ ] [taskF](https://coderun.yandex.ru/problem/sales)
+- [ ] [taskG](https://coderun.yandex.ru/problem/bank-accounts)
+- [ ] [taskH](https://coderun.yandex.ru/problem/maya-script)
+- [ ] [taskI](https://coderun.yandex.ru/problem/control-accent)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/additional-check-cheating)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

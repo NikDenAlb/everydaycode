@@ -52,6 +52,19 @@
 - [ ] [taskI](https://coderun.yandex.ru/problem/control-accent)
 - [ ] [taskJ](https://coderun.yandex.ru/problem/additional-check-cheating)
 
+#### Лекция 5: «Префиксные суммы и два указателя»
+
+- [ ] [taskA](https://coderun.yandex.ru/problem/stylish-clothes)
+- [ ] [taskB](https://coderun.yandex.ru/problem/sum-of-numbers)
+- [ ] [taskC](https://coderun.yandex.ru/problem/tourism)
+- [ ] [taskD](https://coderun.yandex.ru/problem/city-of-che)
+- [ ] [taskE](https://coderun.yandex.ru/problem/beauty-above-all)
+- [ ] [taskF](https://contest.yandex.ru/contest/27794/problems/F/)
+- [ ] [taskG](https://coderun.yandex.ru/problem/score-hypercheckers)
+- [ ] [taskH](https://coderun.yandex.ru/problem/substring)
+- [ ] [taskI](https://coderun.yandex.ru/problem/robot)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/triangles)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

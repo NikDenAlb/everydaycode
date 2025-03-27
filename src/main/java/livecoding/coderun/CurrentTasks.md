@@ -65,6 +65,20 @@
 - [ ] [taskI](https://coderun.yandex.ru/problem/robot)
 - [ ] [taskJ](https://coderun.yandex.ru/problem/triangles)
 
+#### Лекция 6: «Бинарный поиск»
+
+- [ ] [taskA](https://coderun.yandex.ru/problem/binary-search)
+- [ ] [taskB](https://coderun.yandex.ru/problem/bpproximate-binary-search)
+- [ ] [taskC](https://coderun.yandex.ru/problem/diplomas)
+- [ ] [taskD](https://coderun.yandex.ru/problem/space-settlement)
+- [X] [taskE](https://coderun.yandex.ru/problem/improving-academic-performance)
+- [ ] [taskF](https://coderun.yandex.ru/problem/very-easy-problem)
+- [ ] [taskG](https://coderun.yandex.ru/problem/square)
+- [ ] [taskH](https://coderun.yandex.ru/problem/wires)
+- [ ] [taskI](https://coderun.yandex.ru/problem/cleaning-day)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/median-union)
+- [ ] [taskK](https://coderun.yandex.ru/problem/median-union-2)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

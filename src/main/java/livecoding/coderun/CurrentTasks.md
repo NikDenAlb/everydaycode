@@ -79,6 +79,19 @@
 - [ ] [taskJ](https://coderun.yandex.ru/problem/median-union)
 - [ ] [taskK](https://coderun.yandex.ru/problem/median-union-2)
 
+#### Лекция 7: «Сортировка событий»
+
+- [ ] [taskA](https://coderun.yandex.ru/problem/observation-students)
+- [ ] [taskB](https://coderun.yandex.ru/problem/points-and-segments)
+- [ ] [taskC](https://coderun.yandex.ru/problem/seating-arrangements)
+- [ ] [taskD](https://coderun.yandex.ru/problem/advertising)
+- [ ] [taskE](https://coderun.yandex.ru/problem/cash-registers)
+- [ ] [taskF](https://coderun.yandex.ru/problem/coevals)
+- [ ] [taskG](https://coderun.yandex.ru/problem/children-party)
+- [ ] [taskH](https://coderun.yandex.ru/problem/security)
+- [ ] [taskI](https://coderun.yandex.ru/problem/buses)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/ngu-building)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

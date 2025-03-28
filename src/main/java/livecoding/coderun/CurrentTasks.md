@@ -92,6 +92,19 @@
 - [ ] [taskI](https://coderun.yandex.ru/problem/buses)
 - [ ] [taskJ](https://coderun.yandex.ru/problem/ngu-building)
 
+#### Лекция 8: «Деревья»
+
+- [ ] [taskA](https://coderun.yandex.ru/problem/tree-height)
+- [ ] [taskB](https://coderun.yandex.ru/problem/depth-added-elements)
+- [ ] [taskC](https://coderun.yandex.ru/problem/second-maximum)
+- [ ] [taskD](https://coderun.yandex.ru/problem/bypass)
+- [ ] [taskE](https://coderun.yandex.ru/problem/leaf-conclusion)
+- [ ] [taskF](https://coderun.yandex.ru/problem/fork-conclusion)
+- [ ] [taskG](https://coderun.yandex.ru/problem/branches-conclusion)
+- [ ] [taskH](https://coderun.yandex.ru/problem/avl-balance)
+- [ ] [taskI](https://coderun.yandex.ru/problem/pedigree-number-of-descendants)
+- [ ] [taskJ](https://coderun.yandex.ru/problem/pedigree-counting-levels)
+
 ### [Selection quickstart](https://coderun.yandex.ru/selections/quickstart)
 
 - [X] [task1](https://coderun.yandex.ru/problem/season-tasks)

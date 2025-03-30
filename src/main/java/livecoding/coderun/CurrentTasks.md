@@ -2,9 +2,9 @@
 
 #### Лекция 1: «Сложность, тестирование, особые случаи»
 
-- [ ] [taskA](https://coderun.yandex.ru/problem/conditioner)
+- [X] [taskA](https://coderun.yandex.ru/problem/conditioner)
 - [X] [taskB](https://coderun.yandex.ru/problem/triangle)
-- [ ] [taskC](https://coderun.yandex.ru/problem/phone-numbers)
+- [X] [taskC](https://coderun.yandex.ru/problem/phone-numbers)
 - [ ] [taskD](https://coderun.yandex.ru/problem/equation-root)
 - [ ] [taskE](https://coderun.yandex.ru/problem/ambulance)
 - [ ] [taskF](https://coderun.yandex.ru/problem/arrangement-laptops)
@@ -59,7 +59,6 @@
 - [ ] [taskC](https://coderun.yandex.ru/problem/tourism)
 - [ ] [taskD](https://coderun.yandex.ru/problem/city-of-che)
 - [ ] [taskE](https://coderun.yandex.ru/problem/beauty-above-all)
-- [ ] [taskF](https://contest.yandex.ru/contest/27794/problems/F/)
 - [ ] [taskG](https://coderun.yandex.ru/problem/score-hypercheckers)
 - [ ] [taskH](https://coderun.yandex.ru/problem/substring)
 - [ ] [taskI](https://coderun.yandex.ru/problem/robot)

@@ -27,19 +27,19 @@ public class PrintTheRouteOfTheMaximumCost {
         int[][] dp = new int[n][m];
         StringBuilder[][] dpDir = new StringBuilder[n][m];
 
-        /*
+/*
         +   -   -
         -   -   -
         -   -   -
-         */
+*/
         dp[0][0] = field[0][0];
         dpDir[0][0] = new StringBuilder();
 
-        /*
+/*
         *   +   +
         +   -   -
         +   -   -
-         */
+*/
         for (int i = 1; i < n; i++) {
             dp[i][0] = field[i][0] + dp[i - 1][0];
             dpDir[i][0] = new StringBuilder();
@@ -51,11 +51,11 @@ public class PrintTheRouteOfTheMaximumCost {
             dpDir[0][i].append(dpDir[0][i - 1]).append('R').append(" ");
         }
 
-        /*
+/*
          *   *   *
          *   +   +
          *   +   +
-         */
+*/
         for (int i = 1; i < n; i++) {
             for (int j = 1; j < m; j++) {
                 dpDir[i][j] = new StringBuilder();

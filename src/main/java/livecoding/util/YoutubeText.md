@@ -6,7 +6,7 @@ CodeRun,live coding,algorithms,Java,Yandex,walkthrough
 
 Каналу нужно "more history" для размещения ссылок. Прилагаю информацию об источниках в доступном формате:
 
-Подборка "Быстрый старт"
+Псевдоподборка "Тренировки по алгоритмам 1.0"
 coderun.yandex.ru/selections/quickstart
 
 {N}. {Name of taskN}

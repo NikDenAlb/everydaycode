@@ -1,4 +1,5 @@
 ### tags:
+
 CodeRun,live coding,algorithms,Java,Yandex,walkthrough
 
 ```
@@ -15,11 +16,15 @@ coderun.yandex.ru/problem/{link name of taskN}
 {M}. {Name of taskM}
 coderun.yandex.ru/problem/{link name of taskM}
 ```
+
 ### Name:
+
 Прохождение Кодеруна. Выпуск {N}. Псевдоподборка "Тренировки по алгоритмам 1.0". Задачи {M} и {K}.
 
 ### PlayList:
+
 Кодерун. Java (Алгоритмы + Бекенд)
+
 ```
 Готово:
 Подборка "Быстрый старт"
@@ -43,4 +48,12 @@ https://yandex.ru/yaintern/training
 
 Долгий ящик:
 Продолжать решать задачки. Пройти весь Кодерун.
+```
+
+### PlayList:
+
+Пруд отражений
+
+```
+Сеансы публичной рефлексии
 ```

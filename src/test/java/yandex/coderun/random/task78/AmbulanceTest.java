@@ -109,7 +109,7 @@ public class AmbulanceTest {
         long k2 = 30;
         long p2 = 1;
         long n2 = 3;
-        String expected = "1 0"; // Пример теста с ожиданием
+        String expected = "1 0";
         String actual = Ambulance.findAddress(k1, m, k2, p2, n2);
         assertEquals(expected, actual);
     }
@@ -122,7 +122,7 @@ public class AmbulanceTest {
                 for (long k2 = 1; k2 <= 100; k2++) {
                     for (long p2 = 1; p2 <= m; p2++) {
                         for (long n2 = 1; n2 <= m; n2++) {
-                            String expected = AmbulanceBrute.findAddressBrute((int) k1, (int) m, (int) k2, (int) p2, (int) n2); // Логика для ожидаемого результата
+                            String expected = AmbulanceBrute.findAddressBrute((int) k1, (int) m, (int) k2, (int) p2, (int) n2);
                             String actual = Ambulance.findAddress(k1, m, k2, p2, n2);
                             if (!expected.equals(actual)) {
                                 System.out.printf("Mismatch with inputs: k1=%d, m=%d, k2=%d, p2=%d, n2=%d. Expected: %s, but got: %s%n",

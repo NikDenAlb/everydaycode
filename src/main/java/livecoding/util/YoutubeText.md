@@ -8,7 +8,7 @@ CodeRun,live coding,algorithms,Java,Yandex,walkthrough
 Каналу нужно "more history" для размещения ссылок. Прилагаю информацию об источниках в доступном формате:
 
 Псевдоподборка "Тренировки по алгоритмам 1.0"
-coderun.yandex.ru/selections/quickstart
+yandex.ru/yaintern/algorithm-training_2021
 
 {N}. {Name of taskN}
 coderun.yandex.ru/problem/{link name of taskN}

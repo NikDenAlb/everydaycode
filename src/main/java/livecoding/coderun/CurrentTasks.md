@@ -7,7 +7,7 @@
 - [X] [taskC](https://coderun.yandex.ru/problem/phone-numbers)
 - [X] [taskD](https://coderun.yandex.ru/problem/equation-root)
 - [X] [taskE](https://coderun.yandex.ru/problem/ambulance)
-- [ ] [taskF](https://coderun.yandex.ru/problem/arrangement-laptops)
+- [X] [taskF](https://coderun.yandex.ru/problem/arrangement-laptops)
 - [ ] [taskG](https://coderun.yandex.ru/problem/details)
 - [ ] [taskH](https://coderun.yandex.ru/problem/metro)
 - [X] [taskI](https://coderun.yandex.ru/problem/castle-if)

@@ -1,0 +1,227 @@
+package yandex.algorithms7.l3.taskc;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.IntStream;
+
+public class ReorderingWithXOR {
+    //original nums in sorted order
+    static long[] sortedNums;
+
+    //original nums in sorted order but in ones count
+    static int[] sortedOnes;
+
+    //sortedNums blocker (that already xor into 0 or rearranged ones
+    static boolean[] blocked;
+
+    //service number to fill blocked
+    static int goodOdd;
+
+    //Map for picking nums for reshaping
+    static Map<Integer, Integer> reOrderMap;
+
+    //max digits
+    static int digits;
+
+/*
+           original                       sorted                     final
+        0  [101011]                      [100000]                   [000001]
+
+        1  [001000]                      [110000]                   [110000]
+        2  [010101]                      [111000]                   [110100]
+
+        3  [111111]                      [111000]                   [111000]
+        4  [100001]                      [111100]                   [111100]
+
+        5  [001110]                      [111110]                   [111110]
+        6  [110111]                      [111111]                   [111111]
+           |digits|              XOR:     101101             XOR:    000000
+
+
+          0   1   2   3   4   5   6
+        [43][.8][21][63][33][14][55] - nums
+
+        [.4][.1][.3][.6][.2][.3][.5] - ones in nums
+                   /|\
+        [.1][.4][.2][.5][.0][.6][.3] - indexes of ones in sorted arr
+        [.1][.2][.3][.3][.4][.5][.6] - sortedOnes
+
+
+          0   1   2   3   4   5   6
+        [.1][.2][.3][.3][.4][.5][.6] - sortedOnes
+        [.-][.+][.-][.-][.+][.-][.-] - blocked
+*/
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int n = Integer.parseInt(reader.readLine());
+        long[] nums = Arrays.stream(reader.readLine().split(" ")).mapToLong(Long::parseLong).toArray();
+
+        long mNum = 0;
+        digits = 63;
+        int[] ones = new int[n];
+        for (int i = 0; i < nums.length; i++) {
+            long num = nums[i];
+            int count = 0;
+            mNum = Math.max(mNum, num);
+            while (num > 0) {
+                num &= (num - 1);
+                count++;
+            }
+            ones[i] = count;
+        }
+
+        //digits works fine
+        while (1L << (digits - 1) > mNum) {
+            digits--;
+        }
+
+        //indexes for reversing sorted order int the end
+        int[] indexes = IntStream.range(0, nums.length)
+                .boxed()
+                .sorted(Comparator.comparingLong(i -> ones[i]))
+                .mapToInt(i -> i)
+                .toArray();
+
+
+        long mask = ~(Long.MAX_VALUE << digits);
+        sortedOnes = Arrays.stream(indexes).map(index -> ones[index]).toArray();
+        int flDigits = digits;
+        sortedNums = Arrays.stream(sortedOnes).mapToLong(i -> mask << (flDigits - i) & mask).toArray();
+        long firstXor = xorArr(sortedNums);
+
+        //reworked, looks fine
+        blocked = new boolean[n];
+        for (int i = 0; i < n; i++) {
+            blocked[i] = ((1L<<(digits-sortedOnes[i]))&firstXor) == 0;
+        }
+
+        //fills fine
+        reOrderMap = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            if (!blocked[i]) {
+                reOrderMap.put(sortedOnes[i], reOrderMap.getOrDefault(sortedOnes[i], 0) + 1);
+            }
+        }
+
+        while (pickMostAndPair()) ;
+        long xor = xorArr(sortedNums);
+
+
+        /////////////////////////////////////////////////////
+        System.out.println("/////////////////////////////////////////////////////");
+        System.out.println("Logs Start");
+        System.out.println("digits = " + digits);
+
+        System.out.println(Long.toBinaryString(mask));
+        System.out.println("sortedOnes = " + Arrays.toString(sortedOnes));
+        for (long num : sortedNums) {
+            System.out.println("Long.toBinaryString(num) = " + Long.toBinaryString(num));
+        }
+        System.out.println("Long.toBinaryString(xor) = " + Long.toBinaryString(xor));
+        System.out.println("countOnes(xor) = " + countOnes(xor));
+        System.out.println("badOdd = " + goodOdd);
+        System.out.println("Arrays.toString(blocked) = " + Arrays.toString(blocked));
+
+        System.out.println("xor = " + xor);
+
+        System.out.println("Logs end");
+        System.out.println("/////////////////////////////////////////////////////");
+        //writer.write(Arrays.stream(nums).boxed().map(String::valueOf).collect(Collectors.joining(" ")));
+        /////////////////////////////////////////////////////
+
+
+        reader.close();
+        writer.close();
+    }
+
+    static boolean pickMostAndPair() {
+        int mV1 = Integer.MIN_VALUE;
+        int mV2 = Integer.MIN_VALUE;
+
+        for (Map.Entry<Integer, Integer> entry : reOrderMap.entrySet()) {
+            if (entry.getValue() > mV1) {
+                mV1 = entry.getKey();
+            } else if (entry.getValue() > mV2) {
+                mV2 = entry.getKey();
+            }
+        }
+        if (mV2 == Integer.MIN_VALUE) {
+            return false;
+        }
+        if (reOrderMap.get(mV1) == 1) {
+            reOrderMap.remove(mV1);
+        } else {
+            reOrderMap.put(mV1, reOrderMap.get(mV1) - 1);
+        }
+        if (reOrderMap.get(mV2) == 1) {
+            reOrderMap.remove(mV2);
+        } else {
+            reOrderMap.put(mV2, reOrderMap.get(mV2) - 1);
+        }
+
+        return swap(mV1, mV2);
+    }
+
+    static boolean swap(int ones1, int ones2) {
+        int temp = Math.max(ones1, ones2);
+        ones1 = Math.min(ones1, ones2);
+        ones2 = temp;
+
+        int ind1 = -1, ind2 = -1;
+
+        for (int i = 0; i < blocked.length; i++) {
+            if (!blocked[i]) {
+                if (sortedOnes[i] == ones1) {
+                    blocked[i] = true;
+                    if (ind1 > -1) {
+                        ind2 = i;
+                        break;
+                    }
+                    ind1 = i;
+                    ones1 = ones2;
+                }
+            }
+        }
+
+        if (ind2 == -1) {
+            return false;
+        }
+
+        sortedNums[ind1] &= (1L << (digits - sortedOnes[ind1]));
+        sortedNums[ind1] |= (1L << (digits - sortedOnes[ind2]));
+        return true;
+
+    }
+
+    static long xorArr(long[] arr) {
+        long out = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            out ^= arr[i];
+        }
+        return out;
+    }
+
+    static int countOnes(long num) {
+        int count = 0;
+        while (num > 0) {
+            num &= (num - 1);
+            count++;
+        }
+        return count;
+    }
+}
+
+/*
+7
+43 8 21 61 33 14 55
+ */
+

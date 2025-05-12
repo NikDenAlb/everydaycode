@@ -1,4 +1,4 @@
-package yandex.coderun.random.task543;
+package yandex.coderun.random.task543.goodtry;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -31,7 +31,6 @@ public class TriangleSimilarityTL2 {
 
         writer.write(String.valueOf(triangles.size()));
 
-        reader.close();
         writer.close();
     }
 }
@@ -39,19 +38,19 @@ public class TriangleSimilarityTL2 {
 record Triangle(int a, int b, int c) {
     Triangle(int a, int b, int c) {
         if (a > b) {
-            int temp = a;
+            int t = a;
             a = b;
-            b = temp;
+            b = t;
         }
         if (b > c) {
-            int temp = b;
+            int t = b;
             b = c;
-            c = temp;
+            c = t;
         }
         if (a > b) {
-            int temp = a;
+            int t = a;
             a = b;
-            b = temp;
+            b = t;
         }
 
         int g = gcd(a, gcd(b, c));
@@ -62,9 +61,9 @@ record Triangle(int a, int b, int c) {
 
     int gcd(int x, int y) {
         while (y != 0) {
-            int temp = y;
+            int t = y;
             y = x % y;
-            x = temp;
+            x = t;
         }
         return x;
     }

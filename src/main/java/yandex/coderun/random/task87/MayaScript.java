@@ -8,6 +8,10 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * <a href="https://coderun.yandex.ru/problem/maya-script">task link</a><br>
+ * test - OK
+ */
 public class MayaScript {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

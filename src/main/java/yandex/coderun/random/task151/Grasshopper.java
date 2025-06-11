@@ -22,7 +22,7 @@ public class Grasshopper {
         int[] dp = new int[n];
         dp[0] = 1;
         for (int i = 1; i <= k && i < n; i++) {
-            for (int j = 1; j < i; j++) {
+            for (int j = 0; j < i; j++) {
                 dp[i] += dp[j];
             }
         }

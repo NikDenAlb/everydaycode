@@ -7,6 +7,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
+/**
+ * <a href="https://coderun.yandex.ru/problem/rectangle-sum">task link</a><br>
+ * test - OK
+ */
 public class RectangleSum {
     static int[][] ps;
 

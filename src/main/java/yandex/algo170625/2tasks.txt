@@ -1,0 +1,54 @@
+Есть два сортированных списка (массива). Нужно написать функцию, которая делает 
+новый сортированный список с объединением элементов этих двух списков
+Пример:
+1-ый список: 1, 2, 2, 5, 7, 14
+2-й список: 4, 6, 6, 7, 9, 14, 15
+Объединение: 1, 2, 2, 4, 5, 6, 6, 7, 7, 9, 14, 14, 15
+
+int[] merge(int[] arr1, int[] arr2) {
+    int[] out = new int[arr1.length + arr2.length]
+    int k = 0, i = 0, j = 0;
+    for (; i < arr1.length && j < arr2.length; k++) {
+        if (arr1[i] <= arr2[j]) {
+            out[k] = arr1[i];
+            i++;
+        } else {
+            out[k] = arr2[j];
+            j++;
+        }
+    }
+    if (i = arr1.length) {
+        while (j < arr2.length) {
+            out[k++] = arr2[j++];
+        }
+    } else {
+        while (i < arr1.length) {
+            out[k++] = arr1[i++];
+        }
+    }
+    return out;
+}
+
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+Example:
+s = "yandex"
+return 0
+s = "yandex!ya!"
+return 2
+
+//"1a1111111111111111111"
+
+int solve(String s) {
+    Map<Character, Integer> map = new HashMap<>();
+    for (int i = 0; i < s.length(); i++) {
+        char ch = s.charAt(i);
+        map.put(ch, map.getOrDefault(ch, 0) + 1);
+    }
+    for (int i = 0; i < s.length(); i++) {
+        char ch = s.charAt(i);
+        if (map.get(ch) == 1) {
+            return i;
+        }
+    }
+    return -1;
+}

@@ -36,5 +36,6 @@ public class Solution {
         Solution solution = new Solution();
         System.out.println(Arrays.toString(solution.solve(5, new int[]{1, -1, -2, 3, 6})));
         System.out.println(Arrays.toString(solution.solve(3, new int[]{1, 1, 0})));
+        System.out.println(Arrays.toString(solution.solve(10, new int[]{-35808, 88285, 25933, -88676, -14525, 11664, -14736, -35961, 48607, 33654})));
     }
 }

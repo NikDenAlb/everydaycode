@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
@@ -31,30 +32,17 @@ public class PrimitiveSolution {
     }
 
     int[] modifyA(int[] a, int l, int r) {
-        int max = a[l];
-        for (int i = l + 1; i <= r; i++) {
-            max = Math.max(max, a[i]);
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = l; i <= r; i++) {
+            set.add(a[i]);
         }
-        int[] result = new int[r - l + 1];
-        System.arraycopy(a, l, result, 0, r - l + 1);
-        Arrays.sort(result);
-        int stopVal = max;
-        for (int i = result.length - 1; i >= 0; i--) {
-            if (result[i] < stopVal - 1) {
-                break;
-            }
-            if (result[i] == stopVal - 1) {
-                stopVal = result[i];
-            }
-        }
-        if (stopVal == 0) {
-            max++;
-        } else {
-            max = stopVal - 1;
+        int newVal = 0;
+        while (set.contains(newVal)) {
+            newVal++;
         }
         int[] out = Arrays.copyOf(a, a.length);
         for (int i = l; i <= r; i++) {
-            out[i] = max;
+            out[i] = newVal;
         }
         return out;
     }

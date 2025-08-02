@@ -1,3 +1,5 @@
+package yandex.algorithms7.l4.taskc;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;

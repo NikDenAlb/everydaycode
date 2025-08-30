@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * <a href="https://coderun.yandex.ru/problem/histogram-and-rectangle">task link</a><br>
+ * <a href="https://coderun.yandex.ru/problem/corrupted-xml">task link</a><br>
  * test - OK
  */
 public class CorruptedXml {

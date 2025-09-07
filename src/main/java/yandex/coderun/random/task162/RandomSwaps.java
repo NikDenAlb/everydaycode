@@ -11,7 +11,7 @@ import java.math.BigInteger;
  * <a href="https://coderun.yandex.ru/problem/random-swaps">task link</a><br>
  * test - OK
  */
-public class RandomSwaps {
+class RandomSwaps {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));

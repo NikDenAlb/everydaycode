@@ -16,7 +16,6 @@ public class Main {
         thread2.run();
 
         System.out.println("---5Threads:---");
-
         for (int i = 0; i < 5; i++) {
             MyThread thread = new MyThread(i);
             thread.start();
@@ -28,6 +27,23 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             Runnable runnable = new MyRunnable(i);
             new Thread(runnable).start();
+        }
+
+        Thread.sleep(5000);
+
+        System.out.println("---3Threads with join after start:---");
+        for (int i = 0; i < 3; i++) {
+            MyThread thread = new MyThread(i);
+            System.out.println("thread #" + i + " before start .isAlive() == " + thread.isAlive());
+            thread.start();
+            System.out.println("thread #" + i + " after start .isAlive() == " + thread.isAlive());
+            thread.join();
+            System.out.println("thread #" + i + " after join .isAlive() == " + thread.isAlive());
+        }
+
+        System.out.println("---3Threads by lambda---");
+        for (int i = 0; i < 3; i++) {
+            new Thread(() -> System.out.println(Thread.currentThread().getName())).start();
         }
     }
 }

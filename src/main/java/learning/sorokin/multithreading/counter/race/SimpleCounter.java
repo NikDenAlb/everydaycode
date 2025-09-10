@@ -1,6 +1,6 @@
-package learning.sorokin.multithreading.counter;
+package learning.sorokin.multithreading.counter.race;
 
-public class SimpleCounter {
+class SimpleCounter {
     private int counter;
 
     public SimpleCounter() {

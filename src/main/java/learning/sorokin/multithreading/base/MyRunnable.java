@@ -1,6 +1,6 @@
 package learning.sorokin.multithreading.base;
 
-public class MyRunnable implements Runnable {
+class MyRunnable implements Runnable {
     private final int threadId;
 
     public MyRunnable(int threadId) {
@@ -10,7 +10,7 @@ public class MyRunnable implements Runnable {
     @Override
     public void run() {
         if (threadId == 3) {
-            throw  new RuntimeException();
+            throw new RuntimeException();
         }
         for (int i = 0; i < 5; i++) {
             System.out.println(i + ": from thread with runnable #" + threadId);

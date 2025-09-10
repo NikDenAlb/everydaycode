@@ -1,6 +1,6 @@
 package learning.sorokin.multithreading.base;
 
-public class Main {
+class Main {
     public static void main(String[] args) throws InterruptedException {
         MyThread thread1 = new MyThread(1);
         MyThread thread2 = new MyThread(2);

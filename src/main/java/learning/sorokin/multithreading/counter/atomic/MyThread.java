@@ -1,6 +1,6 @@
-package learning.sorokin.multithreading.counter;
+package learning.sorokin.multithreading.counter.atomic;
 
-public class MyThread extends Thread {
+class MyThread extends Thread {
     private final SimpleCounter simpleCounter;
 
     private final int threadNumber;

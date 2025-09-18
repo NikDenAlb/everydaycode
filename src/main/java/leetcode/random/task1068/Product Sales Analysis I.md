@@ -1,4 +1,4 @@
-https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times
+https://leetcode.com/problems/product-sales-analysis-i
 
 ```postgresql
 -- Write your PostgreSQL query statement below
